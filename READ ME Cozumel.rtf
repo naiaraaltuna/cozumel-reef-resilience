@@ -1,0 +1,184 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 # Cozumel Reef Resilience (2015\'962024)\
+\
+**Coral Reef Health in Cozumel (2015\'962024): Sustained Resilience and the Impact of the 2024 Bleaching Event**\
+\
+## Project Overview\
+\
+This project analyzes the evolution of coral reef health in **Cozumel** between **2015 and 2024**, comparing local trends with the national average for Mexico and other reef subregions in Quintana Roo.\
+\
+The analysis integrates three independent environmental datasets:\
+\
+- **NOAA Coral Reef Watch** \'96 Sea surface thermal stress measured using Degree Heating Weeks (DHW).\
+- **GBIF (Global Biodiversity Information Facility)** \'96 Georeferenced coral occurrence records obtained through the GBIF API.\
+- **Healthy Reefs Initiative (HRI)** \'96 Reef Health Index values compiled from official Report Cards.\
+\
+The objective is to explore whether changes in reef health coincide with periods of elevated thermal stress and changes in coral community composition.\
+\
+> **Note:** This is an exploratory data analysis project. The observed relationships represent temporal associations and should not be interpreted as evidence of causation.\
+\
+---\
+\
+# Project Highlights\
+\
+- Integrated **three independent environmental datasets** into a single analytical workflow.\
+- Queried the **GBIF REST API** using Python and geographic filters.\
+- Cleaned, transformed and standardized environmental datasets.\
+- Performed exploratory data analysis (EDA) on coral reef health indicators.\
+- Compared temporal trends across multiple reef regions.\
+- Produced publication-quality visualizations using Matplotlib.\
+- Documented the complete workflow in a reproducible Jupyter Notebook.\
+\
+---\
+\
+# Skills Demonstrated\
+\
+- Data Cleaning\
+- Data Wrangling\
+- Exploratory Data Analysis (EDA)\
+- API Data Extraction\
+- Time Series Analysis\
+- Data Integration\
+- Data Visualization\
+- Environmental Data Analytics\
+- Scientific Data Interpretation\
+\
+---\
+\
+# Technologies\
+\
+- Python\
+- Pandas I NumPy I Matplotlib\
+- Jupyter Notebook\
+- Google Colab\
+- GitHub\
+\
+---\
+\
+# Research Questions\
+\
+- How has reef health changed in Cozumel between 2015 and 2024?\
+- Does Cozumel follow the same trend as Mexico or other reef regions?\
+- Do periods of high thermal stress coincide with declines in reef health?\
+- Has the composition of coral families changed over time?\
+\
+---\
+\
+# Data Sources\
+\
+## NOAA Coral Reef Watch\
+\
+Daily Degree Heating Weeks (DHW) time series used as an indicator of accumulated thermal stress.\
+\
+## GBIF\
+\
+Georeferenced records of Cnidaria downloaded through the GBIF API and filtered geographically for Quintana Roo.\
+\
+## Healthy Reefs Initiative (HRI)\
+\
+Reef Health Index values manually compiled from the official Healthy Reefs Report Cards (2015, 2018, 2020, 2022 and 2024.\
+\
+---\
+\
+# Methodology\
+\
+## 1. Data acquisition\
+\
+- Download NOAA thermal stress data.\
+- Query the GBIF API.\
+- Build a structured Reef Health Index dataset.\
+\
+## 2. Data preparation\
+\
+- Convert date variables.\
+- Filter observations between 2015 and 2024.\
+- Handle missing values.\
+- Select reef-building coral families.\
+- Aggregate less frequent families into an **Others** category.\
+\
+## 3. Exploratory Data Analysis\
+\
+- Reef Health Index trends.\
+- Thermal stress (DHW) evolution.\
+- Coral family composition.\
+- Comparison among Cozumel, Quintana Roo and Mexico.\
+\
+## 4. Visualization\
+\
+Visualizations include:\
+\
+- Reef Health Index trends by region.\
+- Comparison between reef health and thermal stress.\
+- Coral family composition over time.\
+- Summary descriptive charts.\
+\
+---\
+\
+# Repository Structure\
+\
+```text\
+cozumel-reef-resilience/\
+\uc0\u9474 \
+\uc0\u9500 \u9472 \u9472  data/\
+\uc0\u9474    \u9500 \u9472 \u9472  gbif_qroo_cnidaria.csv\
+\uc0\u9474    \u9492 \u9472 \u9472  reef_health_index_manual.csv\
+\uc0\u9474 \
+\uc0\u9500 \u9472 \u9472  visuals/\
+\uc0\u9474    \u9500 \u9472 \u9472  reef_health_subregions.png\
+\uc0\u9474    \u9500 \u9472 \u9472  cozumel_vs_dhw.png\
+\uc0\u9474    \u9500 \u9472 \u9472  coral_family_composition.png\
+\uc0\u9474    \u9492 \u9472 \u9472  ...\
+\uc0\u9474 \
+\uc0\u9500 \u9472 \u9472  01_Diversidad.ipynb\
+\uc0\u9474 \
+\uc0\u9492 \u9472 \u9472  README.md\
+```\
+\
+---\
+\
+# Key Findings\
+\
+- Cozumel maintained one of the highest Reef Health Index values throughout most of the study period.\
+- The 2024 bleaching event coincided with the highest accumulated thermal stress (DHW) observed during the analysis.\
+- Coral family composition varied over time, although interpretation should consider differences in observation effort.\
+- The analysis suggests temporal associations between thermal stress and reef condition but does not establish causal relationships.\
+\
+---\
+\
+# Limitations\
+\
+- GBIF records represent species occurrences rather than standardized ecological surveys.\
+- Observation frequency depends on sampling effort and citizen science activity.\
+- Reef Health Index values were manually digitized because no structured dataset is publicly available.\
+- Results should be interpreted as exploratory rather than inferential.\
+\
+---\
+\
+\
+\
+# References\
+\
+- NOAA Coral Reef Watch\
+- Global Biodiversity Information Facility (GBIF)\
+- Healthy Reefs Initiative (HRI)\
+- AGRRA Reef Report Cards (2015\'962024)\
+\
+---\
+\
+# Author\
+\
+**Naiara Altuna**\
+\
+Marine Biologist | Environmental Data Analyst\
+\
+**Skills:** Python \'95 SQL \'95 Pandas \'95 Environmental Analytics \'95 Data Visualization \'95 ESG \'95 Marine Conservation\
+\
+**LinkedIn:** *https://www.linkedin.com/in/naiara-altuna/\
+\
+**GitHub:** https://github.com/naiaraaltuna}
